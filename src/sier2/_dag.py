@@ -664,12 +664,12 @@ class Dag:
 
             
             #Set edge opacity and width
-            network_graph.edge_renderer.glyph = MultiLine(line_alpha=0.5, line_width=1)
+            network_graph.edge_renderer.glyph = MultiLine(line_alpha=1, line_width=2)
 
             #Set edge highlight colors
-            edge_highlight_color = 'black'
-            network_graph.edge_renderer.selection_glyph = MultiLine(line_color=edge_highlight_color, line_width=2)
-            network_graph.edge_renderer.hover_glyph = MultiLine(line_color=edge_highlight_color, line_width=2)
+            edge_highlight_color = 'white'
+            network_graph.edge_renderer.selection_glyph = MultiLine(line_color=edge_highlight_color, line_width=4)
+            network_graph.edge_renderer.hover_glyph = MultiLine(line_color=edge_highlight_color, line_width=4)
 
             #Highlight nodes and edges
             network_graph.selection_policy = NodesAndLinkedEdges()
